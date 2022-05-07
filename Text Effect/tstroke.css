@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+svg{
+    background: #000;
+    width: 100vw;
+    height: 100vh;
+}
+svg text{
+    font-size: 10rem;
+    font-family: serif;   
+    font-weight: 700;
+    stroke-width: 3px;
+    fill: transparent;
+    stroke: #05c9fa;
+    letter-spacing: 3px;
+    animation: effect 3s infinite linear;
+}
+@keyframes effect{
+    0%{
+        stroke-dasharray: 0 70%;
+    }
+    100%{
+        stroke-dasharray: 50% 0;
+        stroke-dashoffset: 10%;
+    }
+}

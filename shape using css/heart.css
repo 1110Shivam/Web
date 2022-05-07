@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+  }
+  .heart{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background: #f44336;
+    transform: rotate(45deg);
+  }
+  .heart::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: inherit;
+    left: -50%;
+  }
+  .heart::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: inherit;
+    top: -50%;
+  }
+  

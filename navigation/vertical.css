@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  color: #3579dc;
+}
+.menu {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+.list-item {
+  height: 40px;
+  width: 40px;
+  padding: 2px;
+  margin: 2px;
+}
+ .list-item .fas {
+  text-align: center;
+  line-height: 40px;
+}
+.list-item i {
+  width: 40px;
+  height: 40px;
+  display: block;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+.list-item i span {
+  width: 0;
+  left: 40px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5;
+  white-space: nowrap;
+  line-height: 40px;
+  transition: 0.2s;
+}
+.list-item i:hover span {
+  width: auto;
+  padding: 0 20px;
+  overflow: visible;
+}
+.home,
+.home span {
+  background: #00688b;
+}
+.about,
+.about span {
+  background: #009acd;
+}
+.services,
+.services span {
+  background: #0099cc;
+}
+.work,
+.work span {
+  background: #00b2ee;
+}
+.blog,
+.blog span {
+  background: #10bef8;
+}
+.contact,
+.contact span {
+  background: #4dd2ff;
+}
